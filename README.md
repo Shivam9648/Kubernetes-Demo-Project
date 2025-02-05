@@ -28,26 +28,32 @@
 
 # 🛠️ How to Run
 1. Clone the repository
+ 
    git clone https://github.com/your-username/kubernetes-demo.git
    cd kubernetes-demo
 
-2. Build and push the Docker image
+3. Build and push the Docker image
+ 
    docker build -t your-dockerhub-username/kubernetes-demo .
    docker push your-dockerhub-username/kubernetes-demo
 
-3. Apply Kubernetes configurations
+5. Apply Kubernetes configurations
+
    kubectl apply -f deployment.yaml
    kubectl apply -f service.yaml
 
-4. Check running pods and services
+7. Check running pods and services
+
    kubectl get pods
    kubectl get services
 
-5. Scale the application (Example: 3 replicas)
+9. Scale the application (Example: 3 replicas)
+    
    kubectl scale deployment kubernetes-demo --replicas=3
 
-6. Test the application using Minikube
-   minikube service kubernetes-demo
+11. Test the application using Minikube
+    
+    minikube service kubernetes-demo
 
 # 📖 Learning Outcomes
    * Kubernetes Deployment and Service Configurations
