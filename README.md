@@ -30,21 +30,25 @@
 1. Clone the repository
  
    git clone https://github.com/your-username/kubernetes-demo.git
+   
    cd kubernetes-demo
 
 3. Build and push the Docker image
  
    docker build -t your-dockerhub-username/kubernetes-demo .
+   
    docker push your-dockerhub-username/kubernetes-demo
 
 5. Apply Kubernetes configurations
 
    kubectl apply -f deployment.yaml
+   
    kubectl apply -f service.yaml
 
 7. Check running pods and services
 
    kubectl get pods
+   
    kubectl get services
 
 9. Scale the application (Example: 3 replicas)
